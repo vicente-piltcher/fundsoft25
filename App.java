@@ -7,9 +7,14 @@ public class App {
         System.out.println(esportivo);
 
         Carro utilitario = new Carro("Utilitário", TipoCombustivel.DIESEL, 5, 70);
-        utilitario.abastece(TipoCombustivel.GASOLINA, 70);
+        utilitario.abastece(TipoCombustivel.DIESEL, 70);
         utilitario.viaja(12);
         System.out.println(utilitario);
+
+        Carro suv = new Carro("SUV", TipoCombustivel.GASOLINA, 8, 55);
+        suv.abastece(TipoCombustivel.GASOLINA, 40);
+        suv.viaja(5);
+        System.out.println(suv);
 
 
 
