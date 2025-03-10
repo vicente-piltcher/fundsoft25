@@ -22,6 +22,32 @@ public class App {
         System.out.println(suvFlex);
 
 
+        Carro econo = new Carro("Economico", TipoCombustivel.GASOLINA, 20, 55);
+
+
+        for (int i = 0; i < 5; ++i){
+            System.out.println("\n\n----------------");
+
+            System.out.println("\nAbastencendo carro basico com gasolina(55):");
+            econo.abastece(TipoCombustivel.GASOLINA, 55);
+            System.out.println(econo);
+
+            System.out.println("\nViajando com o carro Econo(1.100Km):");
+            econo.viaja(1100);
+            System.out.println(econo);
+        }
+
+        System.out.println("\n\n----------------");
+
+        System.out.println("\nAbastencendo carro basico com gasolina(55):");
+        econo.abastece(TipoCombustivel.GASOLINA, 55);
+        System.out.println(econo);
+
+        System.out.println("\nViajando com o carro Econo(Com mais de 5000Km)(70):");
+        econo.viaja(70);
+        System.out.println(econo);
+
+
 
 
     }
