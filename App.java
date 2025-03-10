@@ -16,6 +16,11 @@ public class App {
         suv.viaja(5);
         System.out.println(suv);
 
+        Carro suvFlex = new Carro("SUVFlex", TipoCombustivel.FLEX, 8, 6, 55);
+        suvFlex.abastece(TipoCombustivel.GASOLINA, 40);
+        suvFlex.viaja(7);
+        System.out.println(suvFlex);
+
 
 
     }
