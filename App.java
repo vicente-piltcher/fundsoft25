@@ -6,6 +6,11 @@ public class App {
         esportivo.viaja(3);
         System.out.println(esportivo);
 
+        Carro utilitario = new Carro("Utilitário", TipoCombustivel.DIESEL, 5, 70);
+        utilitario.abastece(TipoCombustivel.GASOLINA, 70);
+        utilitario.viaja(12);
+        System.out.println(utilitario);
+
 
 
     }
